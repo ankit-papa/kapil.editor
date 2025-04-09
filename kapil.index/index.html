@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil | Professional Video Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 4.5rem; /* Big font size */
+            color: #ffffff;
+            background: linear-gradient(45deg, #ff6a00, #ee0979); /* Gradient text color */
+            -webkit-background-clip: text; /* Clip the background gradient to text */
+            color: transparent; /* Make text transparent for gradient */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Shadow to make it pop */
+            letter-spacing: 3px;
+            animation: text-animation 2s ease-in-out infinite alternate;
+        }
+
+        /* Animation for header text */
+        @keyframes text-animation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Container for the content below the header */
+        .container {
+            text-align: center;
+            background: linear-gradient(45deg, #ff6a00, #ee0979); /* Dynamic gradient */
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .button {
+            background-color: #333;
+            color: #ff6a00;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #ff6a00;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Stylish Skills Section */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .skill h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .skill p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        /* Video Gallery */
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .video-container {
+            width: 320px;
+            height: 180px;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            font-size: 1.1rem;
+            color: #bbb;
+            font-weight: 400;
+        }
+
+        footer a {
+            color: #ff6a00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animated Typing Effect */
+        .typing-effect {
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+            color: #ff6a00;
+            font-weight: 600;
+            letter-spacing: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #ff6a00;
+            width: 0;
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Hi, this is Kapil.</h1>
+    </div>
+
+    <div class="container">
+        <p>Professional Video Editor with a Passion for Perfection</p>
+        <p class="typing-effect">Transforming Ideas into Stunning Visual Stories</p>
+        <button class="button" onclick="window.location.href='mailto:kapil@example.com'">Get in Touch</button>
+
+        <div class="skills">
+            <div class="skill">
+                <h3>Video Editing</h3>
+                <p>transform Ideas into visual masterpies.</p>
+            </div>
+            <div class="skill">
+                <h3>Color Grading</h3>
+                <p>.</p>
+            </div>
+            <div class="skill">
+                <h3>Sound Design</h3>
+                <p>Mastering light, shadow, and color for Stunning results.</p>
+            </div>
+        </div>
+
+        <!-- Video Gallery Section -->
+        <div class="video-gallery">
+            <div class="video-container">
+                <iframe src="https://editing.framix.in/wp-content/uploads/2024/11/landing-page.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://editing.framix.in/wp-content/uploads/2024/11/lv_0_20240924121644.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://editing.framix.in/wp-content/uploads/2024/12/VID-20240506-WA0032-2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer>
+            <p>Want to collaborate? <a href="mailto:kapil@example.com">Email me</a></p>
+        </footer>
+    </div>
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kapil | Professional Video Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: linear-gradient(45deg, #ff6a00, #ee0979); /* Dynamic gradient */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .container h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* Stylish Button */
+        .button {
+            background-color: #333;
+            color: #ff6a00;
+            padding: 15px 30px;
+            font-size: 1.4rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button:hover {
+            background-color: #ff6a00;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Contact Links Section */
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            color: #fff;
+            background-color: #333;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-links a:hover {
+            background-color: #ff6a00;
+            transform: scale(1.1);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <h1>Get in Touch with Kapil</h1>
+        <button class="button" onclick="window.location.href='mailto:kapil@example.com'">Contact Me</button>
+
+        <!-- Contact Links -->
+        <div class="contact-links">
+            <a href="https://www.instagram.com/sharma_ji__146" target="_blank">Instagram</a>
+            <a href="https://wa.me/+917988076570" target="_blank">WhatsApp</a>
+            <a href="mailto:ankit2000aa@gmail.com" target="_blank">Email</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with image -->
+    <header>
+        <img src="" alt="Description of Image" class="header-image">
+        <img src="" alt="Description of Image" class="header-image">
+    </header>
+
+    <!-- Your website content -->
+    <div class="content">
+        <!-- Content goes here -->
+    </div>
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css">
+
+</body>
+</html>

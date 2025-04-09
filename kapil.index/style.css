@@ -1,0 +1,18 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the header image */
+header {
+    text-align: center; /* Centers the image */
+    padding: 20px 0;
+}
+
+.header-image {
+    width: 100%; /* Makes the image span the entire width of the screen */
+    height: auto; /* Keeps the image's aspect ratio */
+    max-height: 400px; /* Optional: sets a max height for the image */
+}
